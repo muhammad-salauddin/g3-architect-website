@@ -113,6 +113,70 @@ main {
     color: #727272;
     margin: 24px 0 32px;
 }
+/* Section 3 */
+.sec3 {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    gap: 140px;
+    margin-bottom: 100px;
+}
+.sec3-title-bar {
+    border-left: 5px solid #ff900e;
+    padding-left: 20px; 
+}
+.sec3-title {
+    font-size: 2.8rem;
+    font-weight: bold; 
+    color: #131313;
+    margin-bottom: 24px;
+}
+.sec3-txt {
+    color: #727272;
+    margin-bottom: 30px;
+}
+.sec3-box {
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+.sec3-box-title {
+    color: #131313;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.sec3-box-txt {
+    color: #727272;
+    margin-top: 10px;
+}
+.sec3-img img {
+    border-radius: 8px;
+}
+.sec3-btn {
+    background-color: #ff900e;
+    color: white;
+    border-radius: 8px;
+    padding: 40px;
+    font-size: 4rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: -77px;
+    margin-left: -92px;
+    line-height: 50px;
+}
+.sec3-btn-exp {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.sec3-btn:hover {
+    background-color: rgb(227, 125, 0);
+}
+
+
+
+
 
 
 
@@ -150,7 +214,26 @@ main {
         max-width: 100%;
         margin: 20px auto;
     }
+
+    .sec3 {
+        flex-direction: column;
+        gap: 80px;
+    }
+    .sec3-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sec3-img img {
+        width: 100%;
+    }
+    .sec3-btn {
+        margin: 50px 0 0;
+    }
 }
+
+
 
 /* Small Screen */
 @media screen and (max-width: 576px) {
@@ -193,6 +276,33 @@ main {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+
+    .sec3 {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .sec3-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sec3-img img {
+        width: 100%;
+    }
+    .sec3-title {
+        font-size: 2rem;
+    }
+    .sec3-btn {
+        font-size: 1.8rem;
+        margin: 30px 0 0;
+        padding: 10px 60px;
+        line-height: 35px;
+    }
+    .sec3-btn-exp {
+        font-size: 1rem;
     }
 }
 
